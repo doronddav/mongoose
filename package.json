@@ -1,0 +1,16 @@
+{
+  "name": "mongoosehm",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "DevStart": "nodemon index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "mongoose": "^6.3.5",
+    "nodemon": "^2.0.16"
+  }
+}
