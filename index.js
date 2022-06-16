@@ -101,26 +101,21 @@ async function AddOwner(fName, lName, email, age, vet, pet, pet2) {
 // });
 // console.log(obj);
 
-// async function printVetPetByOwner() {
-//   const ownerResult = await AllOwners.find({});
-//   console.log(ownerResult);
-// }
-// printVetPetByOwner();
+async function printVetPetByOwner() {
+  const ownerResult = await AllOwners.find({});
+  console.log(ownerResult);
+}
+printVetPetByOwner();
 
-// async function printVetPetByVet() {
-//   const vetResult = await Allvets.find({});
-//   console.log(vetResult);
-// }
-// printVetPetByVet();
+async function printVetPetByVet() {
+  const vetResult = await Allvets.find({});
+  console.log(vetResult);
+}
+printVetPetByVet();
 
 async function printVetPetBPet() {
-  const petResult = await Allpets.find({});
+  const petResult = await Allpets.find();
   console.log(petResult);
 }
-printVetPetBPet();
-// Allvets.find({}, function (err, obj) {
-//   console.log("Tamarmarmar");
-//   console.log(obj);
-// });
 
-// mongoose.connection.close();
+mongoose.connection.close();
