@@ -18,4 +18,5 @@ const pet = new mongoose.Schema({
   owners: String,
 });
 
-module.exports = mongoose.model("pet", pet);
+// module.exports = mongoose.model("pet", pet);
+exports.pet = pet;

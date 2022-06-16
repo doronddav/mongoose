@@ -19,8 +19,9 @@ const owner = new mongoose.Schema({
     required: true,
   },
   pets: {
-    type: [mongoose.Types.ObjectId, mongoose.Types.ObjectId],
+    type: [mongoose.Types.ObjectId],
   },
 });
 
-module.exports = mongoose.model("owner", owner);
+// module.exports = mongoose.model("owner", owner);
+exports.owner = owner;

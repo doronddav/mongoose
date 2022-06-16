@@ -20,4 +20,5 @@ const vet = new mongoose.Schema({
   },
 });
 
-module.exports = mongoose.model("vet", vet);
+// module.exports = mongoose.model("vet", vet);
+exports.vet = vet;
